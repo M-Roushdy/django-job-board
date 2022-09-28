@@ -31,6 +31,11 @@ ALLOWED_HOSTS = ['7a03a4dcfed047c39f3ae7fced303773.vfs.cloud9.us-east-1.amazonaw
 # Application definition
 
 INSTALLED_APPS = [
+    'blog',
+    'accounts',
+    'contact',
+    'home',
+    'job',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
