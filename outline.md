@@ -30,3 +30,7 @@ contact
 home
 
 login
+
+
+static files: [frontend] images, css, javascript
+media files: [upload] images
