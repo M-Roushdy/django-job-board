@@ -15,7 +15,11 @@ def job_list(request):
 def job_detail(request, slug):
     job_detail = Job.objects.get(slug=slug)
     if request.method == "POST":
-        pass
+        form = ApplyForm(request.POST, request.FILES)
+        if form.is_valid():
+            myForm = form.save(commit=False)
+            myForm.job=job_detail
+            myForm.save()
     else:
         form = ApplyForm()
         
